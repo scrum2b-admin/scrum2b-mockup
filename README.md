@@ -11,8 +11,8 @@ The main ideas are:
 
 The project is developed for new UX/UI codes for the screens. You could see how it works at: http://new-mockup.scrum2b.com
 
-If you find out any ideas to improve or fix bugs, please do not hesitate to send it to me.
+If you find out any ideas to improve or fix bugs, please do not hesitate to send it to us.
 
 Thanks and Best regards,
 
-Scrumtobe Team
+Scrumtobe Team (Email: scrum2b@ithanoi.com - Website: http://scrumtobe.com)
