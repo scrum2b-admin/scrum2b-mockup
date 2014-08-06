@@ -13,5 +13,5 @@ The project is developed for new UX/UI codes for the screens.
 You could see how it works at: http://new-mockup.scrum2b.com
 If you find out any ideas to improve or fix bugs, please do not hesitate to send it to me.
 
-Thanks and Best regards,
+Thanks and Best regards.
 Scrumtobe Team
