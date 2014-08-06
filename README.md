@@ -1,7 +1,7 @@
 scrum2b-mockup
 ==============
 
-Dear friends, Scrum2B users.
+Dear Friends, Scrum2B users.
 
 We are development the ideas for new screens of Scrum2B Tool version 2.0.
 The main ideas are:
