@@ -32,7 +32,7 @@ a:hover {
 .backlog span {font-weight: bold;
 color: #eb8f00;
 font-size: 18px;}
-.backlog .add_issue img {
+.backlog .icon_add_issue img {
 	float: right;	
 }
 .filter {
@@ -88,7 +88,7 @@ font-size: 18px;}
 	line-height: 40px;
 	font-weight: bold;
 }
-.status_sprint a img {
+.status_sprint .icon_add_issue img {
 	float: right;
 	line-height: 30px;
 }
@@ -278,4 +278,38 @@ right: 0px;
 	background: red;
 	opacity: 0.5;
 	z-index: 120;
+}
+.add_new_issue {
+	border: 1px solid #cccccc;
+	background: #f6f6f6;
+	padding: 5px 5px;
+	font-size: 12px;
+}
+.add_new_issue table span {
+	font-size: 12px;
+	line-height: 20px;
+}
+.add_new_issue table {
+	width: 100%
+}
+.add_new_issue table tr {
+	margin: 2px 0px;
+}
+.add_new_issue table tr td {
+	width: 50%;
+}
+.add_new_issue .title_issue {
+	width: 100%;
+}
+.add_new_issue .issue_description {
+	width: 99%;
+	height: 80px;
+}
+.add_new_issue .end, .add_new_issue .begin,.add_new_issue .time {
+	width: 70px;
+	float: right;
+}
+.add_new_issue .value_content {
+	float: right;
+	width: 73px;
 }
