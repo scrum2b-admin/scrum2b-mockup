@@ -9,7 +9,8 @@ The main ideas are:
 - Get easier to use in ScrumBoard
 - Users could have many View modes and customize the modes.
 
-The project is developed for new UX/UI codes for the screens. You could see how it works at: http://new-mockup.scrum2b.com
+The project is developed for new UX/UI codes for the screens. 
+You could see how it works at: http://new-mockup.scrum2b.com
 If you find out any ideas to improve or fix bugs, please do not hesitate to send it to me.
 
 Thanks and Best regards,
