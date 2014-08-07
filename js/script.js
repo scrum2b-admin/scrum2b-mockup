@@ -125,6 +125,7 @@ $(document).ready(function(){
 	});
 	
 	$(".closed_backlog").click(function(){
+		$('.s2b_column_4').addClass('hide_backlog');
 		$(this).hide();
 		$('.icon_backlog').show();
 		$('.backlog').hide(500);
