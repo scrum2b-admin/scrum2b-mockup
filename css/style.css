@@ -1,15 +1,8 @@
-body {
-  margin: 0;
-}
-a {
-	color: #169;
-	text-decoration: none;
-}
-a:hover {
-	color: #c61a1a;
-}
-.padding_5 {padding: 5px; border: 1px solid	}
+body { margin: 0;}
+a { color: #169; text-decoration: none; }
+a:hover { color: #c61a1a; }
 
+.padding_5 {padding: 5px; border: 1px solid }
 .content { width: 98%; padding: 10px; height: auto; margin: 0 auto; position: relative; }
 .s2b_column_3 {width: 20%; float: left; }
 .s2b_column_4 { width: 26.66666666667%; float: left;}
@@ -18,298 +11,130 @@ a:hover {
 .width_75 {width: 72.5%; float: right;}
 .width_33 {width: 33.33333% !important;}
 
-
 .sprint_1, .sprint_2, .sprint_3, .sprint_4 {height: auto !important; padding-bottom: 50px !important;}
-.backlog {
-	min-height: 50px;
-	z-index: 30;
-	position: absolute;
-	top: 115px;
-	left: 30px;
-	width: 25%;
-	
-}
-.backlog span {font-weight: bold;
-color: #eb8f00;
-font-size: 18px;}
-.backlog .icon_add_issue img {
-	float: right;	
-}
-.filter {
-	height: 100px;
-	background: #eee;
-}
-.filter_left {
-	width: 70%;
-	float: left;
-}
-.filter_right {
-	width: 30%;
-	float: left;
-}
-.filter_left .icon_backlog img {
-	height: 20px;
-	width: 20px;
-	margin-top: 30px;
-}
-.closed_backlog img {
-	height: 20px;
-	width: 20px;
-	position: absolute;
-	top: 120px
-}
-.filter_left ul {
-	display: inline-flex;
-	list-style: none;
-	margin-top: 30px;
-}
+.backlog {min-height: 50px; z-index: 30; position: absolute; left: 30px; width: 25%; }
 
-.filter_right  img {
-	height: 40px;
-	width: 40px;
-	text-align: right;
-}
-.filter_right ul {
-	float: right;	
-	text-align: right;
-	display: inline-flex;
-	list-style: none;
-	margin-top: 30px;
-}
-.filter_right ul li {
-	margin-left: 10px;
-}
-.ui-accordion-content {
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-}
+.backlog span {font-weight: bold; color: #eb8f00; font-size: 18px;}
+.backlog .icon_add_issue img { float: right; }
+.backlog #sortable_backlog { overflow: auto; height: 450px !important; min-height: 450px !important; max-height: 450px !important; }
+/*filter*/
+.filter { height: 100px; background: #eee; }
+.filter .filter_left { width: 70%; float: left; }
+.filter .filter_right { width: 30%; float: left; }
+.filter .filter_left .icon_backlog img { height: 20px; width: 20px; margin-top: 30px; }
+.filter .filter_left ul { display: inline-flex; list-style: none; margin-top: 30px; }
+.filter .filter_right  img { height: 40px; width: 40px; text-align: right; }
+.filter .filter_right ul { float: right; text-align: right; display: inline-flex; list-style: none; margin-top: 30px; }
+.filter .filter_right ul li { margin-left: 10px; }
 
-.status_sprint span {
-	line-height: 40px;
-	font-weight: bold;
-}
-.status_sprint .icon_add_issue img {
-	float: right;
-	line-height: 30px;
-}
-.title_issue {
-	position: relative;
-}
-.title_issue a{
-	line-height: 0px !important;
-}
-.title_issue .icon_config{
-	position: absolute;
-top: 0px;
-right: 0px;
+.ui-accordion-content { padding-left: 0px !important; padding-right: 0px !important; }
+.closed_backlog img { height: 20px; width: 20px; position: absolute; top: 120px; }
 
-}
-.title_issue .icon_config img {
-	width: 20px;
-	height: 20px;
-	float: right;
-	cursor: pointer;
-}
-.title_issue a {
-	font-size: 14px;
-	line-height: 40px;
-}
-.issue {background: #ede; border: 1px solid; padding: 0px; padding: 5px;
-	position: relative;
-	margin-bottom: 5px;
-	margin-top: 5px;
-}
-.setting {
-	position: absolute;
-	top: 25px;
-	right: 5px;
-	background: #ddd;
-	z-index: 100;
-}
-.setting ul {
-	list-style: none;
-	margin: 0px;	
-	padding: 5px;
-	border: 1px solid;
-}
-.setting ul li {
-	font-size: 14px;
-	padding: 3px 0px;
-}
-.setting ul li:hover {
-	background: #555;
-}
-.content_issue {
-	
-}
-.detail_issue {
-	background: white;
-}
-.content_issue .avata img {
-	height: 40px;
-	width: 40px;
-}
-.icon_down img, .icon_top img {
-	height: 20px;
-	width: 20px;
-	cursor: pointer;
-}
-.progress_issue {
-	width: 30%;
-	float: right;
-	text-align: right;
-	margin-top: 0px;
-}
-.progress_issue span {
-	float: right;
-	font-size: 14px;
-	color: red;
-}
-.detail h4 {
-	font-size: 15px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.detail p {
-	font-size: 13px;
-	margin: 4px 0px;
-}
-.file_comment {
-	height: 22px;
-	
-}
-.file_comment ul {
-	display: inline-flex;
-	list-style: none;	
-	float: right;
-	margin: 0px;
-	padding: 0px;
-	background: rgb(201, 223, 224);
-}
-.file_comment ul li {
-	font-size: 14px;
-	padding: 2px;
-}
-.open_file, .open_comment {
-	cursor: pointer;
-} 
-.comment p {
-	margin: 0px;
-	padding: 5px 0px;
-}
-.comment ul {
-	list-style: none;
-	padding: 0px;
-}
-.comment ul li{
-	display: none;
-}
-.comment ul li:first-child {
-	display: inline;
-}
-.comment .avata img {
-	height: 30px;
-	width: 30px;
-}
-.comment ul li span {
-	font-size: 12px;
-}
-.file ul {
-	list-style: none;
-	padding: 0px;
-}
-.file p {
-	margin: 0px;
-	padding: 5px 0px;
-}
-.file ul li{
-	display: none;
-}
-.file ul li:first-child {
-	display: inline;
-}
-.file .icon_file img {
-	height: 30px;
-	width: 30px;
-}
-.file ul li span {
-	font-size: 12px;
-}
-.view_file, .view_comment {
-	color: #598DC1;
-	font-size: 12px;
-	cursor: pointer;
-}
-.closed_issue {
-	float: right;
-}
-.closed_issue img {
-	height: 20px;
-	width: 20px;
-}
-.hide {
-	display: none;
-}
-.open_sprint_closed {
-	float: right;
-}
-.open_sprint_closed span img {
-	height: 20px;
-	width: 20px;
-}
-.test {
-	z-index: 101 !important;
-	top: 310px !important;
-	left: 339px !important;
-}
-.connectedSortable {
-	min-height: 70px;
-}
-.issue_closed .content_issue, .issue_closed .detail_issue {
-	display: none;
-}
-.issue_closed .issue {
-}
-#popup_content {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 768px;
-	background: red;
-	opacity: 0.5;
-	z-index: 120;
-}
-.add_new_issue {
-	border: 1px solid #cccccc;
-	background: #f6f6f6;
-	padding: 5px 5px;
-	font-size: 12px;
-}
-.add_new_issue table span {
-	font-size: 12px;
-	line-height: 20px;
-}
-.add_new_issue table {
-	width: 100%
-}
-.add_new_issue table tr {
-	margin: 2px 0px;
-}
-.add_new_issue table tr td {
-	width: 50%;
-}
-.add_new_issue .title_issue {
-	width: 100%;
-}
-.add_new_issue .issue_description {
-	width: 99%;
-	height: 80px;
-}
-.add_new_issue .end, .add_new_issue .begin,.add_new_issue .time {
-	width: 70px;
-	float: right;
-}
-.add_new_issue .value_content {
-	float: right;
-	width: 73px;
-}
+.sprint_total { }
+
+/*chi hien 3 sprint dau an colose*/
+.backlog_mode .backlog { display: block;}
+.backlog_mode .issue_closed { display: none;}
+.backlog_mode .open_sprint_closed { display: none; }
+/*.backlog_mode .icon_add_issue {display: block;}*/
+.backlog_mode .add_new_issue {display: none;}
+/*hien 3 trang thai chinh*/
+.basic_mode .backlog { display: none;}
+.basic_mode .issue_closed { display: none;}
+.basic_mode .open_sprint_closed { display: block; }
+/*hien du 4 cai*/
+.full_mode .issue_closed { display: block;}
+.full_mode .backlog { display: none;}
+.full_mode .open_sprint_closed { display: none; }
+
+.status_sprint span { line-height: 40px; font-weight: bold; }
+.status_sprint .icon_add_issue img { float: right; line-height: 30px; }
+.title_issue { position: relative; }
+.title_issue a{ line-height: 0px !important; }
+.title_issue .icon_config{ position: absolute; top: 0px; right: 0px; }
+.title_issue .icon_config img { width: 20px; height: 20px; float: right; cursor: pointer; }
+.title_issue a { font-size: 14px; line-height: 40px; }
+.issue {background: #ede; border: 1px solid; padding: 0px; padding: 5px; position: relative; margin-bottom: 5px; margin-top: 5px; }
+
+/*cac trang thai cua issue*/
+.mini_mode .title_issue .icon_config { display: none;}
+.mini_mode .content_issue {display: none;}
+.mini_mode .detail_issue {display: none;}
+.mini_mode .file_comment {display: none;}
+.mini_mode .file {display: none;}
+.mini_mode .comment {display: none;}
+
+.small_mode .title_issue .icon_config { display: block;}
+.small_mode .content_issue {display: block;}
+.small_mode .detail_issue {display: none;}
+.small_mode .file_comment {display: none;}
+.small_mode .file {display: none;}
+.small_mode .comment {display: none;}
+
+.normal_mode .title_issue .icon_config { display: block;}
+.normal_mode .content_issue {display: block;}
+.normal_mode .detail_issue {display: block;}
+.normal_mode .file_comment {display: block;}
+.normal_mode .file {display: none;}
+.normal_mode .comment {display: none;}
+
+
+
+.setting { position: absolute; top: 25px; right: 5px; background: #ddd; z-index: 100; }
+.setting ul { list-style: none; margin: 0px; padding: 5px; border: 1px solid; }
+.setting ul li { font-size: 14px; padding: 3px 0px; }
+.setting ul li:hover { background: #555; }
+
+.content_issue { }
+.detail_issue { background: white;}
+.content_issue .avata img { height: 40px; width: 40px; }
+.icon_down img, .icon_top img { height: 20px; width: 20px; cursor: pointer; }
+.progress_issue { width: 30%; float: right; text-align: right; margin-top: 0px; }
+.progress_issue span { float: right; font-size: 14px; color: red; }
+.detail h4 { font-size: 15px; margin-top: 10px; margin-bottom: 10px; }
+.detail p { font-size: 13px; margin: 4px 0px; }
+
+.file_comment { height: 22px; }
+.file_comment ul { display: inline-flex; list-style: none; float: right; margin: 0px; padding: 0px; background: rgb(201, 223, 224); }
+.file_comment ul li { font-size: 14px; padding: 2px; }
+
+.file_comment .open_file, .file_comment  .open_comment { cursor: pointer;} 
+.comment p { margin: 0px; padding: 5px 0px; }
+.comment ul {list-style: none; padding: 0px; }
+.comment ul li{ display: none; }
+.comment ul li:first-child { display: inline; }
+.comment .avata img { height: 30px; width: 30px; }
+.comment ul li span { font-size: 12px; }
+.comment .view_comment { color: #598DC1; font-size: 12px; cursor: pointer; }
+
+.file ul { list-style: none; padding: 0px; }
+.file p {  margin: 0px; padding: 5px 0px; }
+.file ul li{  display: none; }
+.file ul li:first-child { display: inline; }
+.file .icon_file img { height: 30px; width: 30px; }
+.file ul li span { font-size: 12px; }
+.file .view_file { color: #598DC1; font-size: 12px; cursor: pointer; }
+
+.closed_issue { float: right; }
+.closed_issue img { height: 20px; width: 20px; }
+
+.hide { display: none; }
+.open_sprint_closed { float: right;}
+.open_sprint_closed span img { height: 20px; width: 20px; }
+.test { z-index: 101 !important; top: 310px !important; left: 339px !important; }
+.connectedSortable { min-height: 70px; }
+.issue_closed .content_issue, .issue_closed .detail_issue { display: none; }
+.issue_closed .issue { }
+
+.add_new_issue { border: 1px solid #cccccc; background: #f6f6f6; padding: 5px 5px; font-size: 12px; }
+.add_new_issue table span { font-size: 12px; line-height: 20px; }
+.add_new_issue table { width: 100%; }
+.add_new_issue table tr { margin: 2px 0px; }
+.add_new_issue table tr td { width: 50%; }
+.add_new_issue .title_issue { width: 100%; }
+.add_new_issue .issue_description { width: 99%;height: 80px; }
+.add_new_issue .end, .add_new_issue .begin, .add_new_issue .time { width: 70px; float: right; }
+.add_new_issue .value_content { float: right; width: 73px; }
+
+.absolute_backlog { position: absolute;}
+.fixed_backlog { position: fixed; top: 0px;}
