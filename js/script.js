@@ -1,23 +1,9 @@
 
 $(document).ready(function(){
-	
-	check_height_max();
 
 	$( "#accordion" ).accordion();
 
-	$(".icon_down").click(function(){
-		$(this).hide();
-		$(this).parent().parent().parent().addClass('normal_mode');
-		$(this).parent().parent().parent().removeClass('small_mode');
-		$(this).parent().find('.icon_top').show();
-	});
-
-	$(".icon_top").click(function(){
-		$(this).hide();
-		$(this).parent().parent().parent().removeClass('normal_mode');
-		$(this).parent().parent().parent().addClass('small_mode');
-		$(this).parent().find('.icon_down').show();
-	});
+	check_height_max();
 
 	$(document).click(function(e){ 
 		$('.setting').hide();
@@ -34,11 +20,28 @@ $(document).ready(function(){
 		e.stopPropagation();
 	});
 
+	$(".icon_down").click(function(){
+		$(this).hide();
+		$(this).parent().parent().parent().addClass('normal_mode');
+		$(this).parent().parent().parent().removeClass('small_mode');
+		$(this).parent().find('.icon_top').show();
+		check_height_max();
+	});
+
+	$(".icon_top").click(function(){
+		$(this).hide();
+		$(this).parent().parent().parent().removeClass('normal_mode');
+		$(this).parent().parent().parent().addClass('small_mode');
+		$(this).parent().find('.icon_down').show();
+		check_height_max();
+	});
+
 	$(".open_file").click(function(){
 		$(this).parent().parent().parent().parent().find(".file").show();
 		$(this).parent().parent().parent().parent().find(".comment").hide();
 		$(this).parent().addClass("background_d");
 		$(this).parent().parent().find('.open_comment').parent().removeClass("background_d");
+		check_height_max();
 	});
 
 	$(".open_comment").click(function(){
@@ -46,14 +49,17 @@ $(document).ready(function(){
 		$(this).parent().parent().parent().parent().find(".comment").show();
 		$(this).parent().addClass("background_d");
 		$(this).parent().parent().find('.open_file').parent().removeClass("background_d");
+		check_height_max();
 	});
 
 	$(".view_comment").click(function(){
 		$(this).parent().parent().find(".comment ul li").show();
+		check_height_max();
 	});
 
 	$(".view_file").click(function(){
 		$(this).parent().parent().find(".file ul li").show();
+		check_height_max();
 	});
 
 	$(".closed_issue").click(function(){
@@ -89,7 +95,7 @@ $(document).ready(function(){
 	$( "#sortable1, #sortable2, #sortable3, #sortable4 " ).on( "sortstop", function( event, ui ) {
 		check_height_max();
 	});
-
+	
 	function check_height_max(){
 		$(".check_height").css("min-height","auto");
 		var height1 =	$("#sortable1").height();
@@ -106,9 +112,11 @@ $(document).ready(function(){
 		$('.s2b_column_4').removeClass('hide_backlog');
 		$('.closed_backlog').show();
 		$('.content').removeClass('full_mode');
+		$('.content').removeClass('basic_mode');
 		$('.content').addClass('backlog_mode');
 		$('.sprint_total').addClass('width_75');
 		$('.issue').removeClass('small_mode');
+		$('.issue').removeClass('normal_mode');
 		$('.issue').addClass('mini_mode');
 		$('.sprint_total').find('.s2b_column_4').addClass('width_33');
 		$('.add_new_issue').hide();
@@ -123,6 +131,7 @@ $(document).ready(function(){
 		$('.content').addClass('full_mode');
 		$('.content').find('.sprint_total').removeClass('width_75');
 		$('.content').find('.sprint_total').find('.s2b_column_4').removeClass('width_33');
+		$('.content').find('.sprint_total').find('.s2b_column_4').removeClass('s2b_column_5');
 		$('.issue').removeClass('mini_mode');
 		$('.issue').addClass('small_mode');
 		$('.add_new_issue').hide();
@@ -134,12 +143,27 @@ $(document).ready(function(){
 	});
 	
 	$(".cancel_issue").click(function(){
-			$(this).parent().parent().parent().parent().parent().parent().hide();
+		$(this).parent().parent().parent().parent().parent().parent().hide();
 	});
 
 	$(function() {
     $( ".add_new_issue .begin, .add_new_issue .end " ).datepicker();
   });
+
+  $(document).click(function(e){ 
+		$('.select_assign').hide();
+		e.stopPropagation();
+	});
+
+	$('.select_assign').on('click',function(){
+		$(this).show();
+	})
+
+	$(".assign").click(function(e){
+		$('.select_assign').hide();
+		$(this).parent().parent().find(".select_assign").toggle();
+		e.stopPropagation();
+	});
 
 	$(window).scroll(function() {
     if($('.backlog').offset().top - $(window).scrollTop() > 0){

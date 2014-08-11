@@ -14,18 +14,19 @@ a:hover { color: #c61a1a; }
 .sprint_1, .sprint_2, .sprint_3, .sprint_4 {height: auto !important; padding-bottom: 50px !important;}
 .backlog {min-height: 50px; z-index: 30; position: absolute; left: 30px; width: 25%; }
 
-.backlog span {font-weight: bold; color: #eb8f00; font-size: 18px;}
+.backlog span {font-family: Tahoma,Verdana,Arial,sans-serif; color: #eb8f00; font-size: 18px;}
 .backlog .icon_add_issue img { float: right; }
 .backlog #sortable_backlog { overflow: auto; height: 450px !important; min-height: 450px !important; max-height: 450px !important; }
 /*filter*/
 .filter { height: 100px; background: #eee; }
-.filter .filter_left { width: 70%; float: left; }
-.filter .filter_right { width: 30%; float: left; }
+.filter .filter_left { width: 20%; float: left; }
+.filter .filter_right { width: 80%; float: left; }
 .filter .filter_left .icon_backlog img { height: 20px; width: 20px; margin-top: 30px; }
 .filter .filter_left ul { display: inline-flex; list-style: none; margin-top: 30px; }
-.filter .filter_right  img { height: 40px; width: 40px; text-align: right; }
+/*.filter .filter_right  img { height: 40px; width: 40px; text-align: right; }
 .filter .filter_right ul { float: right; text-align: right; display: inline-flex; list-style: none; margin-top: 30px; }
-.filter .filter_right ul li { margin-left: 10px; }
+.filter .filter_right ul li { margin-left: 10px; }*/
+.filter .filter_right {text-align: center;}
 
 .ui-accordion-content { padding-left: 0px !important; padding-right: 0px !important; }
 .closed_backlog img { height: 20px; width: 20px; position: absolute; top: 120px; }
@@ -132,9 +133,25 @@ a:hover { color: #c61a1a; }
 .add_new_issue table tr { margin: 2px 0px; }
 .add_new_issue table tr td { width: 50%; }
 .add_new_issue .title_issue { width: 100%; }
-.add_new_issue .issue_description { width: 99%;height: 80px; }
+.add_new_issue .issue_description { width: 99%;height: 80px; font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif; }
 .add_new_issue .end, .add_new_issue .begin, .add_new_issue .time { width: 70px; float: right; }
 .add_new_issue .value_content { float: right; width: 73px; }
+.add_new_issue .assign_up {position: relative;}
+.add_new_issue .assign {border: 1px solid; height: 33px; padding-left: 5px}
+.add_new_issue .assign img {height: 25px; width: 25px;}
+.add_new_issue .assign .sans_down { height: 20px;width: 10px; float: right; display: none; margin-top: 8px;}
+.add_new_issue .assign:hover .sans_down { display: block;}
+
+.add_new_issue .select_assign {border: 1px solid; background: #C6C6C6; position: absolute; z-index: 100; width: 151px; }
+.add_new_issue .select_assign img {height: 25px; width: 25px;}
+.add_new_issue .select_assign ul { list-style: none; padding-left: 0px; margin: 0px;}
+.add_new_issue .select_assign ul li {padding-left: 5px;}
+.add_new_issue .select_assign ul li:hover {background: #666 }
+
 
 .absolute_backlog { position: absolute;}
 .fixed_backlog { position: fixed; top: 0px;}
+
+.connectedSortable {min-height: 80px;}
+.connectedSortable .issue:first-child {margin-top: 0px;}
+.connectedSortable .issue:last-child {margin-bottom: 0px;}
