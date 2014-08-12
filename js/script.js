@@ -5,6 +5,19 @@ $(document).ready(function(){
 
 	check_height_max();
 
+	// $('.title_sprint').on('click',function(){
+	// 	$('.sprint').removeClass('sprint-active');
+	// 	var sprint = $(this).attr('select-sprint');
+	// 	$('.sprint_' + sprint).addClass('sprint-active');
+	// 	check_height_max();
+	// })
+
+	$('.title_sprint').on('click',function(){
+		$('.sprint').removeClass('sprint-active');
+		$(this).next().addClass('sprint-active');
+		check_height_max();
+	})
+
 	$(document).click(function(e){ 
 		$('.setting').hide();
 		e.stopPropagation();
@@ -97,14 +110,14 @@ $(document).ready(function(){
 	});
 	
 	function check_height_max(){
-		$(".check_height").css("min-height","auto");
-		var height1 =	$("#sortable1").height();
-		var height2 =	$("#sortable2").height();
-		var height3 =	$("#sortable3").height();
-		var height4 =	$("#sortable4").height();
+		$(".sprint-active .check_height").css("height","auto");
+		var height1 =	$(".sprint-active #sortable1").height();
+		var height2 =	$(".sprint-active #sortable2").height();
+		var height3 =	$(".sprint-active #sortable3").height();
+		var height4 =	$(".sprint-active #sortable4").height();
 		var array_height = [height1, height2, height3, height4];
 		var max_height = Math.max.apply(Math, array_height);
- 		$(".check_height").css("min-height",max_height);
+ 		$(".sprint-active .check_height").css("height",max_height);
 	}
 
 	$(".icon_backlog").click(function(){

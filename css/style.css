@@ -20,7 +20,7 @@ a:hover { color: #c61a1a; }
 /*filter*/
 .filter { height: 100px; background: #eee; }
 .filter .filter_left { width: 20%; float: left; }
-.filter .filter_right { width: 80%; float: left; }
+.filter .filter_right { width: 60%; float: left; }
 .filter .filter_left .icon_backlog img { height: 20px; width: 20px; margin-top: 30px; }
 .filter .filter_left ul { display: inline-flex; list-style: none; margin-top: 30px; }
 /*.filter .filter_right  img { height: 40px; width: 40px; text-align: right; }
@@ -123,7 +123,7 @@ a:hover { color: #c61a1a; }
 .open_sprint_closed { float: right;}
 .open_sprint_closed span img { height: 20px; width: 20px; }
 .test { z-index: 101 !important; top: 310px !important; left: 339px !important; }
-.connectedSortable { min-height: 70px; }
+.connectedSortable { min-height: 75px; }
 .issue_closed .content_issue, .issue_closed .detail_issue { display: none; }
 .issue_closed .issue { }
 
@@ -152,6 +152,5 @@ a:hover { color: #c61a1a; }
 .absolute_backlog { position: absolute;}
 .fixed_backlog { position: fixed; top: 0px;}
 
-.connectedSortable {min-height: 80px;}
 .connectedSortable .issue:first-child {margin-top: 0px;}
 .connectedSortable .issue:last-child {margin-bottom: 0px;}
