@@ -47,6 +47,8 @@ a:hover { color: #c61a1a; }
 .full_mode .issue_closed { display: block;}
 .full_mode .backlog { display: none;}
 .full_mode .open_sprint_closed { display: none; }
+.full_mode .closed_backlog {display: none;}
+.
 
 .status_sprint span { line-height: 40px; font-weight: bold; }
 .status_sprint .icon_add_issue img { float: right; line-height: 30px; }
@@ -78,8 +80,6 @@ a:hover { color: #c61a1a; }
 .normal_mode .file_comment {display: block;}
 .normal_mode .file {display: none;}
 .normal_mode .comment {display: none;}
-
-
 
 .setting { position: absolute; top: 25px; right: 5px; background: #ddd; z-index: 100; }
 .setting ul { list-style: none; margin: 0px; padding: 5px; border: 1px solid; }
@@ -148,9 +148,12 @@ a:hover { color: #c61a1a; }
 .add_new_issue .select_assign ul li {padding-left: 5px;}
 .add_new_issue .select_assign ul li:hover {background: #666 }
 
-
 .absolute_backlog { position: absolute;}
 .fixed_backlog { position: fixed; top: 0px;}
 
 .connectedSortable .issue:first-child {margin-top: 0px;}
 .connectedSortable .issue:last-child {margin-bottom: 0px;}
+
+.move_issue { border: 1px solid #1694C7; opacity: 0.5; }
+
+.ui-sortable-placeholder { visibility: visible !important; }
