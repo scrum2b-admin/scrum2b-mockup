@@ -86,12 +86,19 @@ a:hover { color: #c61a1a; }
 .setting ul li { font-size: 14px; padding: 3px 0px; }
 .setting ul li:hover { background: #555; }
 
-.content_issue { }
+.content_issue { position: relative;}
+.content_issue .select_progess_issue { position: absolute; border: 1px solid; top: 21px; right: 0px; width: 51px; padding: 0px; z-index: 300;}
+.amount {width: 30px; border: 0px}
+.slider-vertical {float: right;}
+.triangle {width: 0px; height: 0px; float: left; border-top: 0 solid transparent; border-bottom: 102px solid transparent; border-right: 34px solid yellow; }
+
 .detail_issue { background: white;}
 .content_issue .avata img { height: 40px; width: 40px; }
-.icon_down img, .icon_top img { height: 20px; width: 20px; cursor: pointer; }
+.icon_down, .icon_top {float: right !important; }
+.icon_down img, .icon_top img {float: right; height: 20px; width: 20px; cursor: pointer; }
 .progress_issue { width: 30%; float: right; text-align: right; margin-top: 0px; }
-.progress_issue span { float: right; font-size: 14px; color: red; }
+.progress_issue span { font-size: 14px; color: red; float: left; }
+.progress_issue .value_progess {width: 51px; border: 1px solid; float: right; height: 20px;}
 .detail h4 { font-size: 15px; margin-top: 10px; margin-bottom: 10px; }
 .detail p { font-size: 13px; margin: 4px 0px; }
 
@@ -157,3 +164,5 @@ a:hover { color: #c61a1a; }
 .move_issue { border: 1px solid #1694C7; opacity: 0.5; }
 
 .ui-sortable-placeholder { visibility: visible !important; }
+
+.location_start_issue { height: 30px; background: #666; opacity: 0.5}
